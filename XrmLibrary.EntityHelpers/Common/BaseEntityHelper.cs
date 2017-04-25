@@ -91,7 +91,7 @@ namespace XrmLibrary.EntityHelpers.Common
         /// <summary>
         /// Retrieve records by specified <c>FetchXml</c>.
         /// <para>
-        /// For more information look at https://msdn.microsoft.com/en-us/library/microsoft.crm.sdk.messages.fetchxmltoqueryexpressionrequest(v=crm.7).aspx
+        /// For more information look at https://msdn.microsoft.com/en-us/library/microsoft.xrm.sdk.query.fetchexpression(v=crm.7).aspx
         /// </para>
         /// </summary>
         /// <param name="fetchxml"><c>FetchXml</c></param>
@@ -102,13 +102,8 @@ namespace XrmLibrary.EntityHelpers.Common
         {
             ExceptionThrow.IfNullOrEmpty(fetchxml, "fetchxml");
 
-            FetchXmlToQueryExpressionRequest request = new FetchXmlToQueryExpressionRequest()
-            {
-                FetchXml = fetchxml
-            };
-
-            FetchXmlToQueryExpressionResponse serviceResponse = (FetchXmlToQueryExpressionResponse)this.OrganizationService.Execute(request);
-            return this.OrganizationService.RetrieveMultiple(serviceResponse.Query);
+            FetchExpression request = new FetchExpression(fetchxml);
+            return this.OrganizationService.RetrieveMultiple(request);
         }
 
         /// <summary>

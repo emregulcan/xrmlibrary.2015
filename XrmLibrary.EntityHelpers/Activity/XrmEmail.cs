@@ -365,9 +365,9 @@ namespace XrmLibrary.EntityHelpers.Activity
         }
 
         /// <summary>
-        /// Convert <see cref="XrmEmail"/> to MS CRM <see cref="Entity"/> for <c>Email Activity</c>.
+        /// Convert <see cref="XrmEmail"/> to <see cref="Entity"/> for <c>Email Activity</c>.
         /// </summary>
-        /// <returns><see cref="Microsoft.Xrm.Sdk.Entity"/></returns>
+        /// <returns><see cref="Entity"/></returns>
         public Entity ToEntity()
         {
             Entity result = null;

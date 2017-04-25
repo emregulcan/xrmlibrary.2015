@@ -176,6 +176,9 @@ namespace XrmLibrary.EntityHelpers.Schedule.Data
 
         #region | Constructors |
 
+        /// <summary>
+        /// 
+        /// </summary>
         public XrmRecurringAppointment()
         {
             _isInit = true;

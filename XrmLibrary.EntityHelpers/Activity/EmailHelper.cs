@@ -6,7 +6,6 @@ using Microsoft.Xrm.Sdk.Query;
 using Sasha.Exceptions;
 using Sasha.ExtensionMethods;
 using XrmLibrary.EntityHelpers.Common;
-using XrmLibrary.ExtensionMethods;
 
 namespace XrmLibrary.EntityHelpers.Activity
 {
@@ -262,7 +261,7 @@ namespace XrmLibrary.EntityHelpers.Activity
             {
                 nodeList = (EntityCollection)entity[node];
 
-                if (!nodeList.IsNullOrEmpty()
+                if (nodeList != null
                     && !nodeList.Entities.IsNullOrEmpty()
                     && nodeList.Entities[0].Contains("partyid")
                     && nodeList.Entities[0]["partyid"] is EntityReference
@@ -289,7 +288,7 @@ namespace XrmLibrary.EntityHelpers.Activity
             {
                 var nodeList = (EntityCollection)entity[node];
 
-                if (!nodeList.IsNullOrEmpty())
+                if (nodeList != null && !nodeList.Entities.IsNullOrEmpty())
                 {
                     foreach (var item in nodeList.Entities)
                     {
