@@ -7,6 +7,8 @@ This project includes 2 helper library for Microsoft Dynamics CRM 2015.
 
 For more information please visit https://github.com/emregulcan/xrmlibrary.2015/wiki
 
+If you're having trouble please visit https://github.com/emregulcan/xrmlibrary.2015/issues
+
 Your comments and pull requests are very important and always welcome
 
 
