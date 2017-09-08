@@ -14,6 +14,10 @@ Your comments and pull requests are very important and always welcome
 
 # Commit / Release Notes
 
+## v1.4
+- [AddCustomAttribute](https://github.com/emregulcan/xrmlibrary.2015/blob/master/XrmLibrary.EntityHelpers/Activity/XrmEmail.cs#L379-L386) method added to XrmEmail
+- [AddCustomAttribute](https://github.com/emregulcan/xrmlibrary.2015/blob/master/XrmLibrary.EntityHelpers/Schedule/Data/XrmAppointment.cs#L266-L273) method added to XrmAppointment
+
 ## v1.3
 - Strong-named (signed) assembly support added. Please read [this issue](https://github.com/emregulcan/xrmlibrary.2015/issues/9)
 - BUG-FIXING
