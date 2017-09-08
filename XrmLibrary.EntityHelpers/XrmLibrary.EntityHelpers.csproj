@@ -39,7 +39,7 @@
     <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>EG.XrmLibrary.EntityHelpers.2015.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>EG.XrmLibrary.EntityHelpers.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Crm.Sdk.Proxy, Version=7.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -126,7 +126,7 @@
     <Compile Include="Utils\FileHelper.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="EG.XrmLibrary.EntityHelpers.2015.pfx" />
+    <None Include="EG.XrmLibrary.EntityHelpers.snk" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup />
